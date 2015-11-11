@@ -3,7 +3,7 @@ namespace SimpleCRM.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class Linq : DbMigration
+    public partial class InitialMigrations : DbMigration
     {
         public override void Up()
         {

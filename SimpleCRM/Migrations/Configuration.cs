@@ -10,7 +10,6 @@ namespace SimpleCRM.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
-            ContextKey = "SimpleCRM.DAL.CRMContext";
         }
 
         protected override void Seed(SimpleCRM.DAL.CRMContext context)

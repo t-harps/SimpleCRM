@@ -164,21 +164,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201511111230050_DataAnnotations.cs" />
-    <Compile Include="Migrations\201511111230050_DataAnnotations.Designer.cs">
-      <DependentUpon>201511111230050_DataAnnotations.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201511111254067_Linq.cs" />
-    <Compile Include="Migrations\201511111254067_Linq.Designer.cs">
-      <DependentUpon>201511111254067_Linq.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201511111300012_regex.cs" />
-    <Compile Include="Migrations\201511111300012_regex.Designer.cs">
-      <DependentUpon>201511111300012_regex.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201511111304418_postcode.cs" />
-    <Compile Include="Migrations\201511111304418_postcode.Designer.cs">
-      <DependentUpon>201511111304418_postcode.cs</DependentUpon>
+    <Compile Include="Migrations\201511111347437_InitialMigrations.cs" />
+    <Compile Include="Migrations\201511111347437_InitialMigrations.Designer.cs">
+      <DependentUpon>201511111347437_InitialMigrations.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Address.cs" />
@@ -248,17 +236,8 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201511111230050_DataAnnotations.resx">
-      <DependentUpon>201511111230050_DataAnnotations.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201511111254067_Linq.resx">
-      <DependentUpon>201511111254067_Linq.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201511111300012_regex.resx">
-      <DependentUpon>201511111300012_regex.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201511111304418_postcode.resx">
-      <DependentUpon>201511111304418_postcode.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201511111347437_InitialMigrations.resx">
+      <DependentUpon>201511111347437_InitialMigrations.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
