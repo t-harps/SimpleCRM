@@ -1,0 +1,94 @@
+﻿@model SimpleCRM.Models.Customer
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Customer</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Age)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Age)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Gender)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Gender)
+        </dd>
+
+        <dt>
+           
+        </dt>
+        <dd>
+            <table class ="table">
+                <tr>
+                    <th>Address Book</th>
+                    <th></th>
+                </tr>
+                @foreach (var item in Model.Addresses)
+                { 
+                <tr>
+                    <td>
+                    @Html.DisplayFor(modelItem => item.NameOrNum), 
+                    @Html.DisplayFor(modelItem => item.AddressLine1) <br />
+                    @Html.DisplayFor(modelItem => item.AddressLine2) <br />
+                    @Html.DisplayFor(modelItem => item.Postcode) <br />
+                    @Html.DisplayFor(modelItem => item.County) <br />
+                    @Html.DisplayFor(modelItem => item.Country)
+                    </td>
+                    <td>
+                    @Html.ActionLink("Edit", "Edit", "Addresses", new { id = item.AddressID }, null) --
+                    @Html.ActionLink("Delete", "Delete", "Addresses", new { id = item.AddressID }, null)
+                    </td>
+                </tr>
+                }
+            </table>
+        </dd>
+        @if (ViewBag.AddressLimit < 5)
+        {
+            <dt></dt>
+            <dd>
+                @Html.ActionLink("Add New Address", "Create", "Addresses", new { CustomerID = Model.CustomerID }, null)
+            </dd>
+        }
+        
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CustomerID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
