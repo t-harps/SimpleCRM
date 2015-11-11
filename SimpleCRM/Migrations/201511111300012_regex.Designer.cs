@@ -7,13 +7,13 @@ namespace SimpleCRM.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class InitialCreate : IMigrationMetadata
+    public sealed partial class regex : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(InitialCreate));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(regex));
         
         string IMigrationMetadata.Id
         {
-            get { return "201511101914503_InitialCreate"; }
+            get { return "201511111300012_regex"; }
         }
         
         string IMigrationMetadata.Source

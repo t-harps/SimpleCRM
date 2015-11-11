@@ -164,9 +164,21 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201511101914503_InitialCreate.cs" />
-    <Compile Include="Migrations\201511101914503_InitialCreate.Designer.cs">
-      <DependentUpon>201511101914503_InitialCreate.cs</DependentUpon>
+    <Compile Include="Migrations\201511111230050_DataAnnotations.cs" />
+    <Compile Include="Migrations\201511111230050_DataAnnotations.Designer.cs">
+      <DependentUpon>201511111230050_DataAnnotations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201511111254067_Linq.cs" />
+    <Compile Include="Migrations\201511111254067_Linq.Designer.cs">
+      <DependentUpon>201511111254067_Linq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201511111300012_regex.cs" />
+    <Compile Include="Migrations\201511111300012_regex.Designer.cs">
+      <DependentUpon>201511111300012_regex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201511111304418_postcode.cs" />
+    <Compile Include="Migrations\201511111304418_postcode.Designer.cs">
+      <DependentUpon>201511111304418_postcode.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Address.cs" />
@@ -188,6 +200,7 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Properties\PublishProfiles\SimpleCRM0302.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -235,8 +248,17 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201511101914503_InitialCreate.resx">
-      <DependentUpon>201511101914503_InitialCreate.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201511111230050_DataAnnotations.resx">
+      <DependentUpon>201511111230050_DataAnnotations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511111254067_Linq.resx">
+      <DependentUpon>201511111254067_Linq.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511111300012_regex.resx">
+      <DependentUpon>201511111300012_regex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511111304418_postcode.resx">
+      <DependentUpon>201511111304418_postcode.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
