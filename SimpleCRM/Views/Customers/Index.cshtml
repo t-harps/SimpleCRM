@@ -11,7 +11,7 @@
 <p>
     @Html.ActionLink("Add New Customer", "Create")
 </p>
-@using (Html.BeginForm("Index","Customer",FormMethod.Get))
+@using (Html.BeginForm("Index","Customers",FormMethod.Get))
 {
     <p>
         Find by email: @Html.TextBox("SearchString", ViewBag.CurrentFilter as string)
@@ -21,13 +21,13 @@
 <table class="table">
     <tr>
         <th>
-           Email
+           @Html.ActionLink("Email", "Index", new { sortOrder = ViewBag.EmailSortParm, currentFilter=ViewBag.CurrentFilter })
         </th>
         <th>
-           First Name
+           @Html.ActionLink("First Name", "Index", new { sortOrder = ViewBag.FirstNameSortParm, currentFilter = ViewBag.CurrentFilter })
         </th>
         <th>
-            Last Name
+           @Html.ActionLink("Last Name", "Index", new { sortOrder = ViewBag.LastNameSortParm, currentFilter = ViewBag.CurrentFilter })
         </th>
         <th>
             Age

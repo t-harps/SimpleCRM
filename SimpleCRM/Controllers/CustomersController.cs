@@ -20,6 +20,9 @@ namespace SimpleCRM.Controllers
         public ActionResult Index(string sortOrder, string currentFilter, string searchString, int? page)
         {
             ViewBag.CurrentSort = sortOrder;
+            ViewBag.EmailSortParm = String.IsNullOrEmpty(sortOrder) ? "email_desc" : "";
+            ViewBag.FirstNameSortParm = sortOrder == "FirstName" ? "firstName_desc" : "FirstName";
+            ViewBag.LastNameSortParm = sortOrder == "LastName" ? "lastName_desc" : "LastName";
             if (searchString != null)
             {
                 page = 1;
@@ -35,7 +38,28 @@ namespace SimpleCRM.Controllers
             {
                 customers = customers.Where(c => c.Email.Contains(searchString));
             }
-            customers = customers.OrderBy(c => c.Email);
+            switch (sortOrder)
+            {
+                case "email_desc":
+                    customers = customers.OrderByDescending(c => c.Email);
+                    break;
+                case "FirstName":
+                    customers = customers.OrderBy(c => c.FirstName);
+                    break;
+                case "firstName_desc":
+                    customers = customers.OrderByDescending(c => c.FirstName);
+                    break;
+                case "LastName":
+                    customers = customers.OrderBy(c => c.LastName);
+                    break;
+                case "lastName_desc":
+                    customers = customers.OrderByDescending(c => c.LastName);
+                    break;
+                default:
+                    customers = customers.OrderBy(c => c.Email);
+                    break;
+            }
+            
             int pageSize = 5;
             int pageNumber = (page ?? 1);
             return View(customers.ToPagedList(pageNumber, pageSize));
