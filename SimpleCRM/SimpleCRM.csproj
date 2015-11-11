@@ -168,6 +168,10 @@
     <Compile Include="Migrations\201511111347437_InitialMigrations.Designer.cs">
       <DependentUpon>201511111347437_InitialMigrations.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201511111425419_Error-Messages.cs" />
+    <Compile Include="Migrations\201511111425419_Error-Messages.Designer.cs">
+      <DependentUpon>201511111425419_Error-Messages.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Address.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -238,6 +242,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201511111347437_InitialMigrations.resx">
       <DependentUpon>201511111347437_InitialMigrations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511111425419_Error-Messages.resx">
+      <DependentUpon>201511111425419_Error-Messages.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

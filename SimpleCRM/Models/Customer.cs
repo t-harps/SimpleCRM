@@ -9,7 +9,7 @@ namespace SimpleCRM.Models
     public class Customer
     {
         public int CustomerID { get; set; }
-        [RegularExpression(@"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}")]
+        [RegularExpression(@"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}", ErrorMessage="Field must contain an email address")]
         [Required]
         public string Email { get; set; }
         [Required]
