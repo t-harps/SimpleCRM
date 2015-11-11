@@ -7,13 +7,13 @@ namespace SimpleCRM.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class ErrorMessages : IMigrationMetadata
+    public sealed partial class init : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(ErrorMessages));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(init));
         
         string IMigrationMetadata.Id
         {
-            get { return "201511111425419_Error-Messages"; }
+            get { return "201511111445485_init"; }
         }
         
         string IMigrationMetadata.Source

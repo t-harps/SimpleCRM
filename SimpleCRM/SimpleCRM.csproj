@@ -164,13 +164,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201511111347437_InitialMigrations.cs" />
-    <Compile Include="Migrations\201511111347437_InitialMigrations.Designer.cs">
-      <DependentUpon>201511111347437_InitialMigrations.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201511111425419_Error-Messages.cs" />
-    <Compile Include="Migrations\201511111425419_Error-Messages.Designer.cs">
-      <DependentUpon>201511111425419_Error-Messages.cs</DependentUpon>
+    <Compile Include="Migrations\201511111445485_init.cs" />
+    <Compile Include="Migrations\201511111445485_init.Designer.cs">
+      <DependentUpon>201511111445485_init.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Address.cs" />
@@ -240,11 +236,8 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201511111347437_InitialMigrations.resx">
-      <DependentUpon>201511111347437_InitialMigrations.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201511111425419_Error-Messages.resx">
-      <DependentUpon>201511111425419_Error-Messages.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201511111445485_init.resx">
+      <DependentUpon>201511111445485_init.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
